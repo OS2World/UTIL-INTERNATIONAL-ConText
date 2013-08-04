@@ -5,7 +5,7 @@ Utility for converting text encodings.
 
 LICENSE
 ===============
-* GNU GPL V2
+* BSD like
 
 COMPILE TOOLS
 ===============
