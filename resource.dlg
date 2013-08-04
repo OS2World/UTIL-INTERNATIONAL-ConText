@@ -1,0 +1,42 @@
+#ifndef OS2_INCLUDED
+   #include <os2.h>
+#endif
+DLGINCLUDE 1 "resource.h"
+
+DLGTEMPLATE IDD_ABOUT LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Product Information", IDD_ABOUT, 1, 1, 200, 68, WS_VISIBLE, FCF_SYSMENU | FCF_TITLEBAR | FCF_CLOSEBUTTON
+            PRESPARAMS PP_FONTNAMESIZE, "9.WarpSans"
+    BEGIN
+        DEFPUSHBUTTON   "~OK",                              ID_MAINPROGRAM, 40,  2,   40,  12
+        ICON            ID_MAINPROGRAM,                     -1,             7,   43,  20,  16,  WS_GROUP
+        LTEXT           "ConText/2 - Convert Text Encoding",-1,             40,  54,  150, 8
+                        PRESPARAMS PP_FONTNAMESIZE,         "9.WarpSans Bold"
+        LTEXT           "Version 0.4",                      IDD_TARGETCP,   40,  45,  72,  8
+        GROUPBOX        "",                                 -1,             40,  41,  150, 4
+        LTEXT           "(C) 2007 Alex Taylor.  All rights reserved.",
+                                                            -1,             40,  28,  150, 8
+    END
+END
+
+DLGTEMPLATE IDD_CLIPBOARD LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Clipboard Options", IDD_CLIPBOARD, 1, 1, 172, 97, WS_VISIBLE, FCF_SYSMENU | FCF_TITLEBAR | FCF_CLOSEBUTTON
+            PRESPARAMS PP_FONTNAMESIZE, "9.WarpSans"
+    BEGIN
+        GROUPBOX        "Input text",                       -1,                 3,   41,  166, 53
+        AUTOCHECKBOX    "~Paste Unicode text when available",
+                                                            IDD_IPASTEUCS,      8,   77,  155, 8,   WS_GROUP
+        AUTORADIOBUTTON "Convert to the ~selected input encoding",
+                                                            IDD_PASTETARGET,    24,  67,  140, 8
+        AUTORADIOBUTTON "Convert ~to the current PM codepage",
+                                                            IDD_PASTECURRENT,   24,  57,  140, 8
+        AUTOCHECKBOX    "Copy as ~Unicode text",            IDD_ICOPYUCS,       8,   45,  156, 8
+        GROUPBOX        "Output text",                      -1,                 3,   18,  166, 20
+        AUTOCHECKBOX    "Copy ~as Unicode text",            IDD_OCOPYUCS,       7,   22,  157, 8,   WS_GROUP
+        DEFPUSHBUTTON   "~OK",                              DID_OK,             3,   2,   40,  12,  WS_GROUP
+        PUSHBUTTON      "~Cancel",                          DID_CANCEL,         45,  2,   40,  12
+        PUSHBUTTON      "~Help",                            IDD_CLIPHELP,       129, 2,   40,  12,  BS_HELP | WS_DISABLED
+    END
+END
+

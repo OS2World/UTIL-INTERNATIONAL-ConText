@@ -1,0 +1,73 @@
+#define INCL_NLS
+#include <os2.h>
+#include "resource.h"
+
+ICON ID_MAINPROGRAM "context.ico"
+
+MENU ID_MAINPROGRAM
+BEGIN
+    SUBMENU "~File",                    IDM_FILE
+    BEGIN
+        MENUITEM "~Convert\tCtrl+Enter",ID_CONVERT,     MIS_TEXT
+        MENUITEM SEPARATOR
+        MENUITEM "E~xit\tF3",           ID_QUIT,        MIS_TEXT
+    END
+    SUBMENU "~Edit",                    IDM_EDIT
+    BEGIN
+        MENUITEM "~Undo",               ID_IUNDO,       MIS_TEXT
+        MENUITEM SEPARATOR
+        MENUITEM "Cu~t",                ID_ICUT,        MIS_TEXT
+        MENUITEM "~Copy",               ID_ICOPY,       MIS_TEXT
+        MENUITEM "~Paste",              ID_IPASTE,      MIS_TEXT
+        MENUITEM SEPARATOR
+        MENUITEM "~Copy  (output)",     ID_OCOPY,       MIS_TEXT
+    END
+    SUBMENU "~Options",                 IDM_OPTIONS
+    BEGIN
+        MENUITEM "~Clipboard...",       ID_OPTCLIP,     MIS_TEXT
+/*        MENUITEM "Text ~font...",       ID_OPTFONT,     MIS_TEXT, MIA_DISABLED */
+    END
+    SUBMENU "~Help",                    IDM_HELP
+    BEGIN
+        MENUITEM "Product information", ID_ABOUT,       MIS_TEXT
+    END
+END
+
+MENU IDM_ICONTEXT
+BEGIN
+    MENUITEM "~Undo",                   ID_IUNDO,       MIS_TEXT
+    MENUITEM SEPARATOR
+    MENUITEM "Cu~t",                    ID_ICUT,        MIS_TEXT
+    MENUITEM "~Copy",                   ID_ICOPY,       MIS_TEXT
+    MENUITEM "~Paste",                  ID_IPASTE,      MIS_TEXT
+    MENUITEM SEPARATOR
+    SUBMENU  "~Unicode options",        IDM_IOPTIONS
+    BEGIN
+        MENUITEM "Paste if ~available", ID_IPASTEUNI,   MIS_TEXT //, MIA_NODISMISS
+        MENUITEM "Convert to ~selected encoding",
+                                        ID_IPASTECP,    MIS_TEXT //, MIA_NODISMISS
+        MENUITEM SEPARATOR
+        MENUITEM "~Include when copying",
+                                        ID_ICOPYUNI,    MIS_TEXT //, MIA_NODISMISS
+    END
+END
+
+MENU IDM_OCONTEXT
+BEGIN
+    MENUITEM "~Copy",                       ID_OCOPY,       MIS_TEXT
+    MENUITEM SEPARATOR
+    SUBMENU  "~Unicode options",            IDM_OOPTIONS
+    BEGIN
+        MENUITEM "~Include when copying",   ID_OCOPYUNI,    MIS_TEXT //, MIA_NODISMISS
+    END
+END
+
+ACCELTABLE ID_MAINPROGRAM
+BEGIN
+    VK_F3,      ID_QUIT,    VIRTUALKEY
+    VK_ENTER,   ID_CONVERT, VIRTUALKEY, CONTROL
+    VK_NEWLINE, ID_CONVERT, VIRTUALKEY, CONTROL
+END
+
+RCINCLUDE resource.dlg
+

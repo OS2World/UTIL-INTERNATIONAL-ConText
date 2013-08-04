@@ -1,0 +1,179 @@
+#
+# Unicode Codepages
+#
+1207;PM Unicode, UPF-8
+1208;Unicode, UTF-8
+
+#
+# ASCII-based (PC) Codepages
+#
+367;ASCII, 7-bit
+437;DOS Extended ASCII (United States)
+813;ISO Greek, ISO-8859-7
+819;ISO Latin 1, ISO-8859-1
+850;IBM Latin 1 (Multilingual)
+851;DOS Greek
+852;IBM Latin 2 (Eastern Europe)
+855;IBM Cyrillic
+856;DOS Hebrew
+857;IBM Latin 5 (Turkey)
+859;IBM Latin 9 (Multilingual)
+860;IBM Portuguese
+861;IBM Icelandic
+862;IBM Hebrew (Israel)
+863;IBM Canadian French
+864;IBM Arabic
+865;IBM Nordic
+866;IBM Russian
+868;IBM Urdu
+869;IBM Greek
+874;Thai, TIS-620/ISO-8859-11 Extended
+878;Internet Russian, KOI8-R
+891;Korean Extended ASCII
+895;Japanese JIS-Roman, 7-bit
+# 897;Japanese JISX0201-1976, SBCS-PC (same as 1041)
+903;Simplified Chinese ASCII, SAA
+# 904;Traditional Chinese ASCII, SAA (same as 1043)
+907;APL
+909;APL2 Extended
+910;APL2
+912;ISO Latin 2, ISO-8859-2
+913;ISO Latin 3, ISO-8859-3
+914;ISO Latin 4, ISO-8859-4
+915;ISO Cyrillic, ISO-8859-5
+916;ISO Hebrew, ISO-8859-8
+920;ISO Latin 5, ISO-8859-9
+921;ISO Latin 7, ISO-8859-13
+922;Estonian
+923;ISO Latin 9, ISO-8859-15 (Multilingual)
+932;Japanese, Shift_JIS (same as 943)
+942;Japanese, Shift_JIS-1978/SAA
+943;Japanese, Shift_JIS-1990/Win31-J
+944;Korean, SAA legacy encoding
+946;Simplified Chinese, SAA legacy encoding
+948;Traditional Chinese CNS11643, SAA
+949;Korean KSC5601, Wansung
+950;Traditional Chinese BIG-5, MBCS-PC
+954;Japanese, EUC-JP
+964;Traditional Chinese, EUC-TW
+970;Korean, EUC-KR
+1004;Windows Latin 1 Extended
+1006;Urdu
+1008;Windows Arabic, Original
+1041;Japanese JISX0201-1976, SBCS-PC
+1043;Traditional Chinese ASCII SAA
+1051;HP Roman 8
+1088;Korean ASCII Extended, SBCS-PC
+1089;ISO Arabic, ISO-8859-6
+1098;IBM Farsi
+1114;ASCII + PC Symbols, 7-bit SBCS-PC
+1115;Simplified Chinese ASCII Extended, SBCS-PC
+1116;IBM Estonian
+1117;IBM Latvian
+1118;IBM Lithuanian
+1119;IBM Lithuanian & Russian
+1124;Ukrainian, ISO Cyrillic Modified
+1125;IBM Ukrainian
+1131;IBM Belarussian
+1250;Windows Latin 2
+1251;Windows Cyrillic
+1252;Windows Latin 1
+1253;Windows Greek
+1254;Windows Turkish
+1255;Windows Hebrew
+1256;Windows Arabic
+1257;Windows Latin 4
+1275;Apple Latin 1
+1276;Adobe PostScript Standard Encoding
+1277;Adobe PostScript Latin 1 Encoding
+1280;Apple Greek
+1281;Apple Turkish
+1282;Apple Central European
+1283;Apple Cyrillic
+1381;Simplified Chinese GB2312, MBCS-PC
+1383;Simplified Chinese, EUC-CN
+1386;Simplified Chinese GBK, MBCS-PC
+
+#
+# Mainframe codepages
+#
+# 37;EBCDIC - United States/Canada, CECP
+# 273;EBCDIC - Germany/Austria, CECP
+# 277;EBCDIC - Denmark/Norway, CECP
+# 278;EBCDIC - Finland/Sweden, CECP
+# 280;EBCDIC - Italy, CECP
+# 282;EBCDIC - Portugal, CECP
+# 284;EBCDIC - Spain/Latin America, CECP
+# 285;EBCDIC - United Kingdom, CECP
+# 290;EBCDIC - Japanese Half-Width Katakana
+# 293;EBCDIC - APL
+# 297;EBCDIC - France, CECP
+# 361;EBCDIC - International, Publishing
+# 382;EBCDIC - Austria/Germany, Publishing
+# 383;EBCDIC - Belgium, Publishing
+# 385;EBCDIC - Canadian French, Publishing
+# 386;EBCDIC - Denmark/Norway, Publishing
+# 387;EBCDIC - Finland/Sweden, Publishing
+# 388;EBCDIC - France, Publishing
+# 389;EBCDIC - Italy, Publishing
+# 391;EBCDIC - Portugal, Publishing
+# 392;EBCDIC - Spain/Philippines, Publishing
+# 393;EBCDIC - Latin America, Publishing
+# 394;EBCDIC - United Kingdom/Ireland, Publishing
+# 395;EBCDIC - United States/Canada, Publishing
+420;EBCDIC - Arabic Bilingual
+424;EBCDIC - Hebrew (Israel)
+500;EBCDIC - International
+# 833;EBCDIC - Korean, SBCS-Host
+838;EBCDIC - Thai
+870;EBCDIC - Latin 2 (Eastern Europe)
+# 871;EBCDIC - Iceland, CECP
+875;EBCDIC - Greek
+918;EBCDIC - Urdu
+924;EBCDIC - Latin 9 (Multilingual)
+930;EBCDIC - Japanese JIS-1990, MBCS-Host
+931;EBCDIC - Japanese Latin, MBCS-Host
+933;EBCDIC - Korean KSC5601, MBCS-Host
+935;EBCDIC - Simplified Chinese GB2312, MBCS-Host
+937;EBCDIC - Traditional Chinese CNS11643, MBCS-Host
+939;EBCDIC - Japanese Extended, MBCS-Host
+1025;EBCDIC - Cyrillic
+1026;EBCDIC - Latin 5 (Turkey)
+# 1027;EBCDIC - Japanese JISX0201-1976, SBCS-Host
+# 1028;EBCDIC - Hebrew - Publishing
+1046;EBCDIC - Arabic
+1047;EBCDIC - Open Systems
+1097;EBCDIC - Farsi
+1112;EBCDIC - Baltic
+1122;EBCDIC - Estonia
+1123;EBCDIC - Ukrainian
+1140;EBCDIC - United States/Canada, ECECP
+1141;EBCDIC - Germany, ECECP
+1142;EBCDIC - Denmark/Norway, ECECP
+1143;EBCDIC - Finland/Sweden, ECECP
+1144;EBCDIC - Italy, ECECP
+1145;EBCDIC - Spain/Latin America, ECECP
+1146;EBCDIC - UK/Ireland, ECECP
+1147;EBCDIC - France, ECECP
+1148;EBCDIC - Multilingual, ECECP
+1149;EBCDIC - Iceland, ECECP
+
+#
+# Other Codepages
+#
+259;Host Symbols - WP
+# 300;Japanese JISX0208-1990, DBCS-Host
+# 301;Japanese JISX0208-1990, DBCS-PC
+363;Host Symbols - Publishing
+829;Host Math Symbols - Publishing
+# 834;Korean KSC5601, DBCS-Host
+# 835;Traditional Chinese CNS11643, DBCS-Host
+# 837;Simplified Chinese GB2312, DBCS-Host
+896;Japanese Half-Width Katakana, EUC code set 2
+952;Japanese JISX0208-1990, EUC code set 1
+953;Japanese JISX0212-1990, EUC code set 3
+955;Japanese JISX0208-1978, canonical
+971;Korean KSC5601, canonical
+1038;Adobe PostScript Symbol Set
+1092;Modified PC Symbols
+
